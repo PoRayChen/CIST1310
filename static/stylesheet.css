@@ -1,0 +1,38 @@
+body{
+	background-color:lightblue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightblue;
+}
+
+.hl {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.hl:hover {
+  background-color: orange;
+  color: white;
+}
+
+.HyperLink{
+	text-size: 28px;
+}
+table {
+	  border-collapse: collapse;
+	    width: 100%;
+    }
+
+th, td {
+	      text-align: left;
+	      padding: 8px;
+	}
+tr:nth-child(odd) {background-color: coral;}
+tr:nth-child(even) {background-color: teal;}

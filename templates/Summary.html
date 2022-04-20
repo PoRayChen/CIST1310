@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{	url_for('static',	filename='stylesheet.css')	}}" rel="stylesheet" />
+    <title>Student Information</title>
+</head>
+<body>
+    <table>
+	    <a class="HyperLink">System</a>
+	    <li class="hl"><a class="hllink" href="/home">home</li></a>
+	    <li class="hl"><a class="hllink" href="/additem">Add</li></a>
+            <li class="hl"><a class="hllink" href="/list">Summary</li></a>
+
+        <tr>
+            <th>Date</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Quantity</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row ["date"]}}</td>
+            <td>{{ row ["productname"]}}</td>
+            <td>{{ row ["description"]}}</td>
+            <td>{{ row ["quantity"]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

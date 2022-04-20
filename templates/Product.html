@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equtv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+href="{{url_for('.static',filename='stylesheet.css')}}">
+</head>
+<body>
+
+    <table>
+            <a class="HyperLink">System</a>
+            <li class="hl"><a class="hllink" href="/home">Home</li></a>
+            <li class="hl"><a class="hllink" href="/additem">Add</li></a>
+            <li class="hl"><a class="hllink" href="/list">Summary</li></a>
+		    </table>
+    <form action = "{{ url_for('product') }}" method="POST">
+    <h3>Product</h3>
+
+    <p>Date</p>
+    <p><input type="date" name="date"></p>
+
+    <p>Product Name</p>    
+    <p><input type="text" name="productname"></p>
+
+    <p>Description</p>
+    <p><input type="text" name="description"></p>
+
+    <p>Quantity</p>
+    <p><input type="int" name="quantity"></p>
+
+    <p><input type="submit" value="submit"></p>
+
+    </forms>
+</body>
+</html>
